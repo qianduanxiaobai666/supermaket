@@ -1,8 +1,8 @@
 <template>
-  <swiper v-if="banners.length">
-    <swiper-item v-for="(item,index) in banners" :key="index">
+  <swiper class="home-swiper" v-if="banners.length">
+    <swiper-item v-for="(item, index) in banners" :key="index">
       <a :href="item.link">
-        <img :src="item.image" alt="">
+        <img :src="item.image" alt="" />
       </a>
     </swiper-item>
   </swiper>
@@ -29,4 +29,7 @@ export default {
 </script>
 <style scoped>
 /*@import url(); 引入公共css类*/
+/* .home-swiper {
+  margin-top: 44px;
+} */
 </style>
